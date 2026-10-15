@@ -1,0 +1,818 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mode & Vêtements - Mon Market</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="mode.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-top">
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <div id="montitre"><span>Mon</span> Market</div>
+        <div class="cherche">
+          <input type="text" placeholder="Rechercher sur Mon Market..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <nav class="nav-bottom" id="navBottom">
+        <a href="home.html" id="iconnav">
+          <span><i class="fa fa-bag-shopping"></i></span>
+          <div>Produits</div>
+        </a>
+
+        <a
+          href="categories.html"
+          id="iconnav"
+          style="color: #08f2d7; font-weight: bold"
+        >
+          <span><i class="fa fa-border-all"></i></span>
+          <div>Catégories</div>
+        </a>
+
+        <a href="achat.html" id="iconnav">
+          <span><i class="fa fa-cart-shopping"></i></span>
+          <div>Panier</div>
+        </a>
+
+        <a href="offres.html" id="iconnav">
+          <span><i class="fa fa-gift"></i></span>
+          <div>Offres</div>
+        </a>
+
+        <a href="compte.html" id="iconnav">
+          <span><i class="fa fa-user"></i></span>
+          <div>Compte</div>
+        </a>
+      </nav>
+    </header>
+
+    <header class="retour-header">
+      <a href="categories.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i>
+        <h2>Retour</h2></a
+      >
+    </header>
+
+    <div class="container">
+      <h1>Mode & Vêtements</h1>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Barcelona.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Barcelone Sweat</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Barcelone Sweat"
+            data-prix="100000"
+            data-image="img/Barcelona.jpg"
+            >Acheter</a
+          >
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/velours.jpg" alt="Veste velours" />
+          </div>
+          <div class="product-name">Veste velours</div>
+          <div class="product-price">150 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Veste velours"
+            data-prix="150000"
+            data-image="img/velours.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/robe-de-princesse.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Robe de Princesse</div>
+          <div class="product-price">250 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Robe de Princesse"
+            data-prix="250000"
+            data-image="img/robe-de-princesse.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/vt.jpg" alt="Veste velours" />
+          </div>
+          <div class="product-name">Veste velours</div>
+          <div class="product-price">150 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Veste velours"
+            data-prix="150000"
+            data-image="img/vt.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/veste.jpg" alt="Veste Velours" />
+          </div>
+          <div class="product-name">Veste Velours</div>
+          <div class="product-price">150 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Veste Velours"
+            data-prix="150000"
+            data-image="img/veste.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/cargo.jpg" alt="Cargo" />
+          </div>
+          <div class="product-name">Cargo</div>
+          <div class="product-price">80 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Cargo"
+            data-prix="80000"
+            data-image="img/cargo.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/gilet-de-costume-sans-manches.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Gilet de costume</div>
+          <div class="product-price">60 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Gilet de costume"
+            data-prix="60000"
+            data-image="img/gilet-de-costume-sans-manches.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pantalon.jpg" alt="Pantalon" />
+          </div>
+          <div class="product-name">Pantalon</div>
+          <div class="product-price">60 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Pantalon"
+            data-prix="60000"
+            data-image="img/pantalon.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/inter.jpg" alt="Inter Miami" />
+          </div>
+          <div class="product-name">Inter Miami</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Inter Miami"
+            data-prix="100000"
+            data-image="img/inter.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/barca.jpg" alt="Barcelone" />
+          </div>
+          <div class="product-name">Barcelone</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Barcelone"
+            data-prix="100000"
+            data-image="img/barca.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/lv.jpg" alt="Liverpool" />
+          </div>
+          <div class="product-name">Liverpool</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Liverpool"
+            data-prix="100000"
+            data-image="img/lv.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/city.jpg" alt="Manchester City" />
+          </div>
+          <div class="product-name">Manchester City</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Manchester City"
+            data-prix="100000"
+            data-image="img/city.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/jord.jpg" alt="Jordan" />
+          </div>
+          <div class="product-name">Jordan</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Jordan"
+            data-prix="100000"
+            data-image="img/jord.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/robe-princesse.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Robe de Princesse</div>
+          <div class="product-price">250 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Robe de Princesse"
+            data-prix="250000"
+            data-image="img/robe-princesse.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/veste-de-mariage.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Veste de mariage</div>
+          <div class="product-price">50 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Veste de mariage"
+            data-prix="50000"
+            data-image="img/veste-de-mariage.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/blouson-printemps1.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Blouson printemps</div>
+          <div class="product-price">50 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Blouson printemps"
+            data-prix="50000"
+            data-image="img/blouson-printemps1.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/goda.jpg" alt="Adidas" />
+          </div>
+          <div class="product-name">Adidas</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Adidas"
+            data-prix="100000"
+            data-image="img/goda.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/tm.jpg" alt="Vêtement" />
+          </div>
+          <div class="product-name">Vêtement</div>
+          <div class="product-price">80 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Vêtement"
+            data-prix="80000"
+            data-image="img/tm.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/t.jpg" alt="Vêtement" />
+          </div>
+          <div class="product-name">Vêtement</div>
+          <div class="product-price">80 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Vêtement"
+            data-prix="80000"
+            data-image="img/t.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image"><img src="img/pt.jpg" alt="Cargo" /></div>
+          <div class="product-name">Cargo</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Cargo"
+            data-prix="100000"
+            data-image="img/pt.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pnt.jpg" alt="Pantalon" />
+          </div>
+          <div class="product-name">Pantalon</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Pantalon"
+            data-prix="100000"
+            data-image="img/pnt.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image"><img src="img/bar.jpg" alt="Barca" /></div>
+          <div class="product-name">Barca</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Barca"
+            data-prix="100000"
+            data-image="img/bar.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image"><img src="img/go.jpg" alt="Nike" /></div>
+          <div class="product-name">Nike</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Nike"
+            data-prix="100000"
+            data-image="img/go.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/ar.jpg" alt="Arsenal" />
+          </div>
+          <div class="product-name">Arsenal</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Arsenal"
+            data-prix="100000"
+            data-image="img/ar.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/air-jordan-4-black.jpg" alt="Air Jordan" />
+          </div>
+          <div class="product-name">Air Jordan</div>
+          <div class="product-price">90 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Air Jordan"
+            data-prix="90000"
+            data-image="img/air-jordan-4-black.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/int.jpg" alt="Inter Miami" />
+          </div>
+          <div class="product-name">Inter Miami</div>
+          <div class="product-price">80 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Inter Miami"
+            data-prix="80000"
+            data-image="img/int.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/h.jpg" alt="Vêtement" />
+          </div>
+          <div class="product-name">Vêtement</div>
+          <div class="product-price">80 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Vêtement"
+            data-prix="80000"
+            data-image="img/h.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/images.jpg" alt="Vêtement" />
+          </div>
+          <div class="product-name">Vêtement</div>
+          <div class="product-price">80 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Vêtement"
+            data-prix="80000"
+            data-image="img/images.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/mci.jpg" alt="Man City" />
+          </div>
+          <div class="product-name">Man City</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Man City"
+            data-prix="100000"
+            data-image="img/mci.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/lvp.jpg" alt="Liverpool" />
+          </div>
+          <div class="product-name">Liverpool</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Liverpool"
+            data-prix="100000"
+            data-image="img/lvp.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/barcas.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Barcelone Sweat</div>
+          <div class="product-price">100 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Barcelone Sweat"
+            data-prix="100000"
+            data-image="img/barcas.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/blouson-printemps.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Blouson printemps</div>
+          <div class="product-price">60 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Blouson printemps"
+            data-prix="60000"
+            data-image="img/blouson-printemps.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/robe-blazer-cintree.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Robe blazer</div>
+          <div class="product-price">70 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Robe blazer"
+            data-prix="70000"
+            data-image="img/robe-blazer-cintree.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/vestef.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Veste de mariage</div>
+          <div class="product-price">20 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Veste de mariage"
+            data-prix="20000"
+            data-image="img/vestef.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pantalon-.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Pantalon</div>
+          <div class="product-price">60 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Pantalon"
+            data-prix="60000"
+            data-image="img/pantalon-.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pantalon.png" alt="pixel" />
+          </div>
+          <div class="product-name">Pantalon</div>
+          <div class="product-price">60 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Pantalon"
+            data-prix="60000"
+            data-image="img/pantalon.png"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pantalons.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Pantalon</div>
+          <div class="product-price">60 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Pantalon"
+            data-prix="60000"
+            data-image="img/pantalons.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/cap.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Sweat capuche</div>
+          <div class="product-price">50 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Sweat capuche"
+            data-prix="50000"
+            data-image="img/cap.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/capu.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Sweat capuche</div>
+          <div class="product-price">20 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Sweat capuche"
+            data-prix="20000"
+            data-image="img/capu.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/capuc.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Sweat capuche</div>
+          <div class="product-price">30 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Sweat capuche"
+            data-prix="30000"
+            data-image="img/capuc.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/capucc.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Sweat capuche</div>
+          <div class="product-price">25 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Sweat capuche"
+            data-prix="25000"
+            data-image="img/capucc.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/capuch.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Sweat capuche</div>
+          <div class="product-price">30 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Sweat capuche"
+            data-prix="30000"
+            data-image="img/capuch.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pontalo.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Pantalon</div>
+          <div class="product-price">40 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Pantalon"
+            data-prix="40000"
+            data-image="img/pontalo.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/robe-col-blazer.jpeg" alt="pixel" />
+          </div>
+          <div class="product-name">Robe blazer</div>
+          <div class="product-price">40 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Robe blazer"
+            data-prix="40000"
+            data-image="img/robe-col-blazer.jpeg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/ba.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Sweat Barça</div>
+          <div class="product-price">60 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Sweat capuche"
+            data-prix="60000"
+            data-image="img/ba.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/gilet-de-costume-sans-manche.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Gilet de costume</div>
+          <div class="product-price">20 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Gilet de costume"
+            data-prix="20000"
+            data-image="img/gilet-de-costume-sans-manche.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pantalon.jpg" alt="pixel" />
+          </div>
+          <div class="product-name">Pantalon</div>
+          <div class="product-price">60 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Pantalon"
+            data-prix="60000"
+            data-image="img/pantalon.jpg"
+            >Acheter</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="mode.js"></script>
+  </body>
+</html>

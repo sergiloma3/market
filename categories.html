@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catégories - Mon Market</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="categories.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-top">
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <div id="montitre"><span>Mon</span> Market</div>
+        <div class="cherche">
+          <input type="text" placeholder="Rechercher sur Mon Market..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <nav class="nav-bottom" id="navBottom">
+        <a href="home.html" id="iconnav">
+          <span><i class="fa fa-bag-shopping"></i></span>
+          <div>Produits</div>
+        </a>
+
+        <a
+          href="categories.html"
+          id="iconnav"
+          style="color: #08f2d7; font-weight: bold"
+        >
+          <span><i class="fa fa-border-all"></i></span>
+          <div>Catégories</div>
+        </a>
+
+        <a href="achat.html" id="iconnav">
+          <span><i class="fa fa-cart-shopping"></i></span>
+          <div>Panier</div>
+        </a>
+
+        <a href="offres.html" id="iconnav">
+          <span><i class="fa fa-gift"></i></span>
+          <div>Offres</div>
+        </a>
+
+        <a href="compte.html" id="iconnav">
+          <span><i class="fa fa-user"></i></span>
+          <div>Compte</div>
+        </a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Toutes les Catégories</h1>
+      <div class="categories">
+        <a href="electronique.html" class="tech">
+          <img src="img/tech.jpg" alt="" />
+          <h2>High-Tech</h2>
+          <p>Smartphones TV Audio <br />Photographie PC portable</p>
+        </a>
+        <a href="mode.html" class="tech">
+          <img src="img/vetements.jpg" alt="" />
+          <h2>Mode & vetements</h2>
+          <p>Homme Femme Enfant</p>
+        </a>
+        <a href="maison.html" class="tech">
+          <img src="img/maison.jpg" alt="" />
+          <h2>Maison et jardin</h2>
+          <p>Villa Jardin Piscine <br />Studio Episserie</p>
+        </a>
+        <a href="" class="tech">
+          <img src="img/decoration.jpg" alt="" />
+          <h2>Décoration</h2>
+          <p>Salon Table Siège <br />Cuisine Armoire Turoire...</p>
+        </a>
+        <a href="" class="tech">
+          <img src="img/beauté.jpg" alt="" />
+          <h2>Accesoir beauté</h2>
+          <p>Maquillage Vernis<br />Parfum...</p>
+        </a>
+      </div>
+    </div>
+
+    <script src="categories.js"></script>
+  </body>
+</html>

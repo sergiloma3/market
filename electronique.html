@@ -1,0 +1,609 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Électronique - Mon Market</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="electronique.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+  </head>
+  <header class="navbar">
+    <div class="nav-top">
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <img src="img/logo.png" alt="Logo" class="logo" />
+      <div id="montitre"><span>Mon</span> Market</div>
+      <div class="cherche">
+        <input type="text" placeholder="Rechercher sur Mon Market..." />
+        <button><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+
+    <nav class="nav-bottom" id="navBottom">
+      <a href="home.html" id="iconnav">
+        <span><i class="fa fa-bag-shopping"></i></span>
+        <div>Produits</div>
+      </a>
+
+      <a
+        href="categories.html"
+        id="iconnav"
+        style="color: #08f2d7; font-weight: bold"
+      >
+        <span><i class="fa fa-border-all"></i></span>
+        <div>Catégories</div>
+      </a>
+
+      <a href="achat.html" id="iconnav">
+        <span><i class="fa fa-cart-shopping"></i></span>
+        <div>Panier</div>
+      </a>
+
+      <a href="offres.html" id="iconnav">
+        <span><i class="fa fa-gift"></i></span>
+        <div>Offres</div>
+      </a>
+
+      <a href="compte.html" id="iconnav">
+        <span><i class="fa fa-user"></i></span>
+        <div>Compte</div>
+      </a>
+    </nav>
+  </header>
+  <header class="retour-header">
+    <a href="categories.html" class="back-btn"
+      ><i class="fa fa-arrow-left"></i>
+      <h2>Retour</h2></a
+    >
+  </header>
+  <body>
+    <div class="container">
+      <h1>📱 Électronique</h1>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/iphone.jpg" alt="iPhone 17 Pro" />
+          </div>
+          <div class="product-name">iPhone 17 Pro</div>
+          <div class="product-price">7 500 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="iPhone 17 Pro"
+            data-prix="7500000"
+            data-image="img/iphone.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/samsung.jpg" alt="Samsung Galaxy S25" />
+          </div>
+          <div class="product-name">Samsung Galaxy S25</div>
+          <div class="product-price">5 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Samsung Galaxy S25"
+            data-prix="5000000"
+            data-image="img/samsung.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/xiaomi.jpg" alt="Xiaomi 17 Ultra" />
+          </div>
+          <div class="product-name">Xiaomi 17 Ultra</div>
+          <div class="product-price">4 500 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Xiaomi 17 Ultra"
+            data-prix="4500000"
+            data-image="img/xiaomi.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Apple-AirPods-.jpg" alt="casque Apple" />
+          </div>
+          <div class="product-name">casque Apple</div>
+          <div class="product-price">200 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="casque Apple"
+            data-prix="200000"
+            data-image="img/Apple-AirPods-.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="img/samsung-galaxys26ultra5g.jpg"
+              alt="Samsung S26 ultra"
+            />
+          </div>
+          <div class="product-name">Samsung S26 ultra</div>
+          <div class="product-price">10 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Samsung S26 ultra"
+            data-prix="10000000"
+            data-image="img/samsung-galaxys26ultra5g.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="img/xiaomi_redmi_note_15f.PNG"
+              alt="Xiaomi Redmi 15 Pro"
+            />
+          </div>
+          <div class="product-name">Xiaomi Redmi 15 Pro</div>
+          <div class="product-price">3 200 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Xiaomi Redmi 15 Pro"
+            data-prix="3200000"
+            data-image="img/xiaomi_redmi_note_15f.PNG"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pixel.jpg" alt="Google Pixel 10 Pro" />
+          </div>
+          <div class="product-name">Google Pixel 10 Pro</div>
+          <div class="product-price">2 500 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Google Pixel 10 Pro"
+            data-prix="2500000"
+            data-image="img/pixel.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Vivo-X200-Pro.jpg" alt="Vivo X200 ultra" />
+          </div>
+          <div class="product-name">Vivo X200 ultra</div>
+          <div class="product-price">3 500 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Vivo X200 ultra"
+            data-prix="3500000"
+            data-image="img/Vivo-X200-Pro.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/vivo_x100_ultra.png" alt="Vivo X200" />
+          </div>
+          <div class="product-name">Vivo X200</div>
+          <div class="product-price">4 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Vivo X200"
+            data-prix="4000000"
+            data-image="img/vivo_x100_ultra.png"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="img/OPPOStoreReno15ProMax5G.png"
+              alt="Oppo Reno 15 Pro max"
+            />
+          </div>
+          <div class="product-name">Oppo Reno 15 Pro max</div>
+          <div class="product-price">2 500 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Oppo Reno 15 Pro max"
+            data-prix="2500000"
+            data-image="img/OPPOStoreReno15ProMax5G.png"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/opporeno14.jpeg" alt="Oppo Reno 14 5G" />
+          </div>
+          <div class="product-name">Oppo Reno 14 5G</div>
+          <div class="product-price">1 800 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Oppo Reno 14 5G"
+            data-prix="1800000"
+            data-image="img/opporeno14.jpeg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/samsungpc_.jpg" alt="Samsung Galaxy book5 360" />
+          </div>
+          <div class="product-name">Samsung Galaxy book5 360</div>
+          <div class="product-price">40 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Samsung Galaxy book5 360"
+            data-prix="40000000"
+            data-image="img/samsungpc_.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/samsuntv.png" alt="Samsung smart TV" />
+          </div>
+          <div class="product-name">Samsung smart TV</div>
+          <div class="product-price">3 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Samsung smart TV"
+            data-prix="3000000"
+            data-image="img/samsuntv.png"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/redmibook_14.jpg" alt="Redmibook 14" />
+          </div>
+          <div class="product-name">Redmibook 14</div>
+          <div class="product-price">3 500 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Redmibook 14"
+            data-prix="3500000"
+            data-image="img/redmibook_14.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/ps5.jpg" alt="PlayStation 5" />
+          </div>
+          <div class="product-name">PlayStation 5</div>
+          <div class="product-price">2 500 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="PlayStation 5"
+            data-prix="2500000"
+            data-image="img/ps5.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/canon.png" alt="Canon Cinema" />
+          </div>
+          <div class="product-name">Canon Cinema</div>
+          <div class="product-price">6 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Canon Cinema"
+            data-prix="6000000"
+            data-image="img/canon.png"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/redmi15pro.jpg" alt="Redmi Note 15 Pro" />
+          </div>
+          <div class="product-name">Redmi Note 15 Pro</div>
+          <div class="product-price">2 200 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Redmi Note 15 Pro"
+            data-prix="2200000"
+            data-image="img/redmi15pro.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/lenovo.jpg" alt="Lenovo ThinkPad" />
+          </div>
+          <div class="product-name">Lenovo ThinkPad</div>
+          <div class="product-price">900 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Lenovo ThinkPad"
+            data-prix="900000"
+            data-image="img/lenovo.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/asus.jpg" alt="ASUS ROG Gaming" />
+          </div>
+          <div class="product-name">ASUS ROG Gaming</div>
+          <div class="product-price">5 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="ASUS ROG Gaming"
+            data-prix="5000000"
+            data-image="img/asus.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/jbl.jpg" alt="Casque Bluetooth JBL" />
+          </div>
+          <div class="product-name">Casque Bluetooth JBL</div>
+          <div class="product-price">40 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Casque Bluetooth JBL"
+            data-prix="40000"
+            data-image="img/jbl.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/ecouteur.jpg" alt="Écouteurs Wireless" />
+          </div>
+          <div class="product-name">Écouteurs Wireless</div>
+          <div class="product-price">20 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Écouteurs Wireless"
+            data-prix="20000"
+            data-image="img/ecouteur.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/cable.jpg" alt="Câble USB-C Premium" />
+          </div>
+          <div class="product-name">Câble USB-C Premium</div>
+          <div class="product-price">9 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Câble USB-C Premium"
+            data-prix="9000"
+            data-image="img/cable.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/smart.jpeg" alt="Smart TV" />
+          </div>
+          <div class="product-name">Smart TV</div>
+          <div class="product-price">3 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Smart TV"
+            data-prix="3000000"
+            data-image="img/smart.jpeg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/MSI-GL73.jpg" alt="MSI-GL73" />
+          </div>
+          <div class="product-name">MSI-GL73</div>
+          <div class="product-price">2 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="MSI-GL73"
+            data-prix="2000000"
+            data-image="img/MSI-GL73.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Camescope4K-HDR.jpg" alt="Camescope4K-HDR" />
+          </div>
+          <div class="product-name">Camescope4K-HDR</div>
+          <div class="product-price">3 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Camescope4K-HDR"
+            data-prix="3000000"
+            data-image="img/Camescope4K-HDR.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/secure.png" alt="Tapo Secure 4K" />
+          </div>
+          <div class="product-name">Tapo Secure 4K</div>
+          <div class="product-price">150 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Tapo Secure 4K"
+            data-prix="150000"
+            data-image="img/secure.png"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/webcam.jpg" alt="HDMI webcam 4K" />
+          </div>
+          <div class="product-name">HDMI webcam 4K</div>
+          <div class="product-price">200 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="HDMI webcam 4K"
+            data-prix="200000"
+            data-image="img/webcam.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/chage.png" alt="Chargeur Xiaomi 120W" />
+          </div>
+          <div class="product-name">Chargeur Xiaomi 120W</div>
+          <div class="product-price">300 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Chargeur Xiaomi 120W"
+            data-prix="300000"
+            data-image="img/chage.png"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Pixel10 Pro.png" alt="Google Pixel 10 Pro" />
+          </div>
+          <div class="product-name">Google Pixel 10 Pro</div>
+          <div class="product-price">3 500 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Google Pixel 10 Pro"
+            data-prix="3500000"
+            data-image="img/Pixel10 Pro.png"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/xiaomi18promax.jpg" alt="Xiaomi 18 Pro max" />
+          </div>
+          <div class="product-name">Xiaomi 18 Pro max</div>
+          <div class="product-price">5 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Xiaomi 18 Pro max"
+            data-prix="5000000"
+            data-image="img/xiaomi18promax.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/iphon18.jpg" alt="Iphone 18 Pro max" />
+          </div>
+          <div class="product-name">Iphone 18 Pro max</div>
+          <div class="product-price">12 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Iphone 18 Pro max"
+            data-prix="12000000"
+            data-image="img/iphon18.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/ipad.jpg" alt="Ipad Apple" />
+          </div>
+          <div class="product-name">Ipad Apple</div>
+          <div class="product-price">2 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Ipad Apple"
+            data-prix="2000000"
+            data-image="img/ipad.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/samt.jpg" alt="Tablette Samsung" />
+          </div>
+          <div class="product-name">Tablette Samsung</div>
+          <div class="product-price">1 500 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Tablette Samsung"
+            data-prix="1500000"
+            data-image="img/samt.jpg"
+            >Acheter</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="electronique.js"></script>
+  </body>
+</html>

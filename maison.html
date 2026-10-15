@@ -1,0 +1,185 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison & Jardin - Mon Market</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="maison.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-top">
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <div id="montitre"><span>Mon</span> Market</div>
+        <div class="cherche">
+          <input type="text" placeholder="Rechercher sur Mon Market..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <nav class="nav-bottom" id="navBottom">
+        <a href="home.html" id="iconnav">
+          <span><i class="fa fa-bag-shopping"></i></span>
+          <div>Produits</div>
+        </a>
+
+        <a
+          href="categories.html"
+          id="iconnav"
+          style="color: #08f2d7; font-weight: bold"
+        >
+          <span><i class="fa fa-border-all"></i></span>
+          <div>Catégories</div>
+        </a>
+
+        <a href="achat.html" id="iconnav">
+          <span><i class="fa fa-cart-shopping"></i></span>
+          <div>Panier</div>
+        </a>
+
+        <a href="offres.html" id="iconnav">
+          <span><i class="fa fa-gift"></i></span>
+          <div>Offres</div>
+        </a>
+
+        <a href="compte.html" id="iconnav">
+          <span><i class="fa fa-user"></i></span>
+          <div>Compte</div>
+        </a>
+      </nav>
+    </header>
+
+    <header class="retour-header">
+      <a href="categories.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i>
+        <h2>Retour</h2></a
+      >
+    </header>
+
+    <div class="container">
+      <h1>Maison & Jardin</h1>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/m1.jpg" alt="Maison Moderne" />
+          </div>
+          <div class="product-name">Maison Moderne</div>
+          <div class="product-price">120 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Maison Moderne"
+            data-prix="120000000"
+            data-image="img/m1.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/m2.jpg" alt="Villa de luxe" />
+          </div>
+          <div class="product-name">Villa de luxe</div>
+          <div class="product-price">250 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Villa de luxe"
+            data-prix="250000000"
+            data-image="img/m2.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/m3.jpg" alt="Maison contemporaine" />
+          </div>
+          <div class="product-name">Maison contemporaine</div>
+          <div class="product-price">180 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Maison contemporaine"
+            data-prix="180000000"
+            data-image="img/m3.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/m4.jpg" alt="Maison duplex" />
+          </div>
+          <div class="product-name">Maison duplex</div>
+          <div class="product-price">200 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Maison duplex"
+            data-prix="200000000"
+            data-image="img/m4.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/m5.jpg" alt="Villa élégante" />
+          </div>
+          <div class="product-name">Villa élégante</div>
+          <div class="product-price">220 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Villa élégante"
+            data-prix="220000000"
+            data-image="img/m5.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/maison-neuve.jpg" alt="Maison neuve" />
+          </div>
+          <div class="product-name">Maison neuve</div>
+          <div class="product-price">250 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Maison neuve"
+            data-prix="250000000"
+            data-image="img/maison-neuve.jpg"
+            >Acheter</a
+          >
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/maisoncontemporaine.jpg" alt="Maison contemporaine" />
+          </div>
+          <div class="product-name">Maison contemporaine</div>
+          <div class="product-price">220 000 000 Ar</div>
+          <a
+            href="#"
+            class="btn-buy btn-acheter"
+            data-nom="Maison contemporaine"
+            data-prix="220000000"
+            data-image="img/maisoncontemporaine.jpg"
+            >Acheter</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="maison.js"></script>
+  </body>
+</html>

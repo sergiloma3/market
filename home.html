@@ -1,0 +1,1256 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Mon Market</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-top">
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <div id="montitre"><span>Mon</span> Market</div>
+        <div class="cherche">
+          <input type="text" placeholder="Rechercher sur Mon Market..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <nav class="nav-bottom" id="navBottom">
+        <a
+          href="home.html"
+          id="iconnav"
+          style="color: #08f2d7; font-weight: bold"
+        >
+          <span><i class="fa fa-bag-shopping"></i></span>
+          <div>Produits</div>
+        </a>
+
+        <a href="categories.html" id="iconnav">
+          <span><i class="fa fa-border-all"></i></span>
+          <div>Catégories</div>
+        </a>
+
+        <a href="achat.html" id="iconnav">
+          <span><i class="fa fa-cart-shopping"></i></span>
+          <div>Panier</div>
+        </a>
+
+        <a href="offres.html" id="iconnav">
+          <span><i class="fa fa-gift"></i></span>
+          <div>Offres</div>
+        </a>
+
+        <a href="compte.html" id="iconnav">
+          <span><i class="fa fa-user"></i></span>
+          <div>Compte</div>
+        </a>
+      </nav>
+    </header>
+
+    <main style="padding: 30px; text-align: center">
+      <div class="debut">
+        <div class="promo">
+          <h1>
+            Les meileurs offres <br />
+            du moment!
+          </h1>
+          <p>
+            Des produits de qualités . <br />
+            Des prix abordables . <br />
+            Une livraison rapide et sécurisé <br />partout à Madagascar. <br />
+            <br />
+            <button id="voirplus">
+              <a href="offres.html"
+                >Voirs les offres <span><i class="fa fa-arrow-right"></i></span
+              ></a>
+            </button>
+          </p>
+        </div>
+        <div class="livre">
+          <div class="mad">
+            <div class="place">
+              <h1>
+                Livraison partout à <br /><span id="m">Mad</span
+                ><span id="a">aga</span><span id="s">scar</span>
+              </h1>
+              <p>
+                Suivez votre commande <br />
+                en ligne
+              </p>
+            </div>
+            <div class="iconmada"><img src="img/mada.png" alt="" /></div>
+          </div>
+          <button id="voirplus" style="position: absolute; margin-top: 40px">
+            <a href=""
+              >En savoir plus <span><i class="fa fa-arrow-right"></i></span
+            ></a>
+          </button>
+          <img src="img/camion.png" alt="" style="margin-left: 142px" />
+        </div>
+      </div>
+      <h2 style="margin-top: 30px" class="hh">
+        Trouvez tout ce dont vous avez besoin sur Mon Market!
+      </h2>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/samsung.jpg" alt="Samsung Galaxy S25" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Samsung Galaxy S25</p>
+            <p class="product-price">5 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Samsung Galaxy S25"
+              data-prix="5000000"
+              data-image="img/samsung.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/ecouteur.jpg" alt="Écouteurs Sans Fil Pro" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Écouteurs Sans Fil Pro</p>
+            <p class="product-price">20 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Écouteurs Sans Fil Pro"
+              data-prix="20000"
+              data-image="img/ecouteur.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/redmi15.png" alt="Redmi" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Redmi Note 15</p>
+            <p class="product-price">1 400 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Redmi Note 15"
+              data-prix="1400000"
+              data-image="img/redmi15.png"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/robe-de-princesse.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Robe de Princesse</p>
+            <p class="product-price">250 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Robe de Princesse"
+              data-prix="250000"
+              data-image="img/robe-de-princesse.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/chargeur.jpg" alt="Chargeur Rapide USB-C" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Chargeur Rapide USB-C</p>
+            <p class="product-price">18 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Chargeur Rapide USB-C"
+              data-prix="18000"
+              data-image="img/chargeur.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/cargo.jpg" alt="Cargo" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Cargo</p>
+            <p class="product-price">80 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Cargo"
+              data-prix="80000"
+              data-image="img/cargo.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/samsung-galaxys26ultra5g.jpg" alt="samsung" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Samsung S26 ultra</p>
+            <p class="product-price">10 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Samsung S26 ultra"
+              data-prix="10000000"
+              data-image="img/samsung-galaxys26ultra5g.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/robe-princesse.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Robe de Princesse</p>
+            <p class="product-price">250 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Robe de Princesse"
+              data-prix="250000"
+              data-image="img/robe-princesse.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/cable.jpg" alt="Câble USB Haute Vitesse" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Câble USB Haute Vitesse</p>
+            <p class="product-price">9 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Câble USB Haute Vitesse"
+              data-prix="9000"
+              data-image="img/cable.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/blouson-printemps1.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Blouson printemps</p>
+            <p class="product-price">50 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Blouson printemps"
+              data-prix="50000"
+              data-image="img/blouson-printemps1.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/asus.jpg" alt="Asus Vivibook 17" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Asus Vivibook 17</p>
+            <p class="product-price">5 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Asus Vivibook 17"
+              data-prix="5000000"
+              data-image="img/asus.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/barca.jpg" alt="Barcelone" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Barcelone</p>
+            <p class="product-price">100 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Barcelone"
+              data-prix="100000"
+              data-image="img/barca.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/casque-bluetooth.jpg" alt="Casque Bluetooth P9" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Casque Bluetooth P9</p>
+            <p class="product-price">30 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Casque Bluetooth P9"
+              data-prix="30000"
+              data-image="img/casque-bluetooth.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/int.jpg" alt="Inter Miami" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Inter Miami</p>
+            <p class="product-price">80 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Inter Miami"
+              data-prix="80000"
+              data-image="img/int.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/xiaomi.jpg" alt="Xiaomi 17 pro Max" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Xiaomi 17 pro Max</p>
+            <p class="product-price">4 500 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Xiaomi 17 pro Max"
+              data-prix="4500000"
+              data-image="img/xiaomi.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/air-jordan-4-black.jpg" alt="Air Jordan" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Air Jordan</p>
+            <p class="product-price">90 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Air Jordan"
+              data-prix="90000"
+              data-image="img/air-jordan-4-black.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/lenovo.jpg" alt="Lenovo ThinkPad" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Lenovo ThinkPad</p>
+            <p class="product-price">900 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Lenovo ThinkPad"
+              data-prix="900000"
+              data-image="img/lenovo.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/veste-de-mariage.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Veste de mariage</p>
+            <p class="product-price">50 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Veste de mariage"
+              data-prix="50000"
+              data-image="img/veste-de-mariage.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/iphone.jpg" alt="iPhone 17 Pro Max" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">iPhone 17 Pro Max</p>
+            <p class="product-price">7 500 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="iPhone 17 Pro Max"
+              data-prix="7500000"
+              data-image="img/iphone.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/micro.jpg" alt="Casque micro" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Casque micro</p>
+            <p class="product-price">70 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Casque micro"
+              data-prix="70000"
+              data-image="img/micro.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/jbl.jpg" alt="JBL" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">JBL</p>
+            <p class="product-price">40 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="JBL"
+              data-prix="40000"
+              data-image="img/jbl.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/robe-col-blazer.jpeg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Robe blazer</p>
+            <p class="product-price">40 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Robe blazer"
+              data-prix="40000"
+              data-image="img/robe-col-blazer.jpeg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/ps5.jpg" alt="PlayStation 5" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">PlayStation 5</p>
+            <p class="product-price">2 500 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="PlayStation 5"
+              data-prix="2500000"
+              data-image="img/ps5.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/canon.png" alt="Canon" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Canon Cinema</p>
+            <p class="product-price">6 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Canon Cinema"
+              data-prix="6000000"
+              data-image="img/canon.png"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/redmi15pro.jpg" alt="Redmi" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Redmi Note 15 Pro</p>
+            <p class="product-price">2 200 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Redmi Note 15 Pro"
+              data-prix="2200000"
+              data-image="img/redmi15pro.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pontalo.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Pantalon</p>
+            <p class="product-price">40 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Pantalon"
+              data-prix="40000"
+              data-image="img/pontalo.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/redmibook_14.jpg" alt="Redmi" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Redmibook 14</p>
+            <p class="product-price">3 500 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Redmibook 14"
+              data-prix="3500000"
+              data-image="img/redmibook_14.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/gilet-de-costume-sans-manches.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Gilet de costume</p>
+            <p class="product-price">60 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Gilet de costume"
+              data-prix="60000"
+              data-image="img/gilet-de-costume-sans-manches.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/OPPOStoreReno15ProMax5G.png" alt="Redmi" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Oppo Reno 15 Pro max</p>
+            <p class="product-price">2 500 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Oppo Reno 15 Pro max"
+              data-prix="2500000"
+              data-image="img/OPPOStoreReno15ProMax5G.png"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/opporeno14.jpeg" alt="Redmi" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Oppo Reno 14 5G</p>
+            <p class="product-price">1 800 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Oppo Reno 14 5G"
+              data-prix="1800000"
+              data-image="img/opporeno14.jpeg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/samsungpc_.jpg" alt="samsung" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Samsung Galaxy book5 360</p>
+            <p class="product-price">4 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Samsung S26 ultra"
+              data-prix="40000000"
+              data-image="img/samsungpc_.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/samsuntv.png" alt="samsung" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Samsung smart TV</p>
+            <p class="product-price">3 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Samsung smart TV"
+              data-prix="3000000"
+              data-image="img/samsuntv.png"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Barcelona.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Barcelone Sweat</p>
+            <p class="product-price">100 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Barcelone Sweat"
+              data-prix="100000"
+              data-image="img/Barcelona.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Apple-AirPods-.jpg" alt="apple" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">casque Apple</p>
+            <p class="product-price">200 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="casque Apple"
+              data-prix="200000"
+              data-image="img/Apple-AirPods-.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/xiaomi_redmi_note_15f.PNG" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Xiaomi Redmi 15 Pro</p>
+            <p class="product-price">3 200 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Xiaomi Redmi 15 Pro"
+              data-prix="3200000"
+              data-image="img/xiaomi_redmi_note_15f.PNG"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pixel.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Google Pixel 10 Pro</p>
+            <p class="product-price">2 500 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Google Pixel 10 Pro"
+              data-prix="2500000"
+              data-image="img/pixel.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Vivo-X200-Pro.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Vivo X200 ultra</p>
+            <p class="product-price">3 500 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Vivo X200 ultra"
+              data-prix="3500000"
+              data-image="img/Vivo-X200-Pro.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/vivo_x100_ultra.png" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Vivo X200</p>
+            <p class="product-price">4 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Vivo X200"
+              data-prix="4000000"
+              data-image="img/vivo_x100_ultra.png"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pantalon.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Pantalon</p>
+            <p class="product-price">60 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Pantalon"
+              data-prix="60000"
+              data-image="img/pantalon.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Pixel10 Pro.png" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Google Pixel 10 Pro</p>
+            <p class="product-price">3 500 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Google Pixel 10 Pro"
+              data-prix="3500000"
+              data-image="img/Pixel10 Pro.png"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/xiaomi18promax.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Xiaomi 18 Pro max</p>
+            <p class="product-price">5 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Xiaomi 18 Pro max"
+              data-prix="5000000"
+              data-image="img/xiaomi18promax.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/iphon18.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Iphone 18 Pro max</p>
+            <p class="product-price">12 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Iphone 18 Pro max"
+              data-prix="12000000"
+              data-image="img/iphon18.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/ipad.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Ipad Apple</p>
+            <p class="product-price">2 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Ipad Apple"
+              data-prix="2000000"
+              data-image="img/ipad.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/samt.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Tablette Samsung</p>
+            <p class="product-price">1 500 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Tablette Samsung"
+              data-prix="1500000"
+              data-image="img/samt.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/gilet-de-costume-sans-manche.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Gilet de costume</p>
+            <p class="product-price">20 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Gilet de costume"
+              data-prix="20000"
+              data-image="img/gilet-de-costume-sans-manche.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/smart.jpeg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Smart TV</p>
+            <p class="product-price">3 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Smart TV"
+              data-prix="3000000"
+              data-image="img/smart.jpeg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/MSI-GL73.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">MSI-GL73</p>
+            <p class="product-price">2 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="MSI-GL73"
+              data-prix="2000000"
+              data-image="img/MSI-GL73.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/Camescope4K-HDR.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Camescope4K-HDR</p>
+            <p class="product-price">3 000 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Camescope4K-HDR3"
+              data-prix="3000000"
+              data-image="img/Camescope4K-HDR.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/secure.png" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Tapo Secure 4K</p>
+            <p class="product-price">150 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Tapo Secure 4K"
+              data-prix="150000"
+              data-image="img/secure.png"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/webcam.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">HDMI webcam 4K</p>
+            <p class="product-price">200 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="HDMI webcam 4K"
+              data-prix="200000"
+              data-image="img/webcam.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/chage.png" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Chargeur Xiaomi 120W</p>
+            <p class="product-price">30 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Chargeur Xiaomi 120W"
+              data-prix="300000"
+              data-image="img/chage.png"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/barcas.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Barcelone Sweat</p>
+            <p class="product-price">100 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Barcelone Sweat"
+              data-prix="100000"
+              data-image="img/barcas.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/blouson-printemps.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Blouson printemps</p>
+            <p class="product-price">60 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Blouson printemps"
+              data-prix="60000"
+              data-image="img/blouson-printemps.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/robe-blazer-cintree.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Robe blazer</p>
+            <p class="product-price">70 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Robe blazer"
+              data-prix="70000"
+              data-image="img/robe-blazer-cintree.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/vestef.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Veste de mariage</p>
+            <p class="product-price">20 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Veste de mariage"
+              data-prix="20000"
+              data-image="img/vestef.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pantalon-.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Pantalon</p>
+            <p class="product-price">60 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Pantalon"
+              data-prix="60000"
+              data-image="img/pantalon-.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pantalon.png" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Pantalon</p>
+            <p class="product-price">60 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Pantalon"
+              data-prix="60000"
+              data-image="img/pantalon.png"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/pantalons.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Pantalon</p>
+            <p class="product-price">60 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Pantalon"
+              data-prix="60000"
+              data-image="img/pantalons.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/cap.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Sweat capuche</p>
+            <p class="product-price">50 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Sweat capuche"
+              data-prix="50000"
+              data-image="img/cap.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/capu.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Sweat capuche</p>
+            <p class="product-price">20 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Sweat capuche"
+              data-prix="20000"
+              data-image="img/capu.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/capuc.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Sweat capuche</p>
+            <p class="product-price">30 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Sweat capuche"
+              data-prix="30000"
+              data-image="img/capuc.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/capucc.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Sweat capuche</p>
+            <p class="product-price">25 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Sweat capuche"
+              data-prix="25000"
+              data-image="img/capucc.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/capuch.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Sweat capuche</p>
+            <p class="product-price">30 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Sweat capuche"
+              data-prix="30000"
+              data-image="img/capuch.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/ba.jpg" alt="pixel" />
+          </div>
+          <div class="product-info">
+            <p class="product-title">Sweat Barça</p>
+            <p class="product-price">60 000 Ar</p>
+            <a
+              href="#"
+              class="btn-acheter"
+              data-nom="Sweat capuche"
+              data-prix="60000"
+              data-image="img/ba.jpg"
+              >Acheter</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Mon Market</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="personnel.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-top">
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <div id="montitre"><span>Mon</span> Market</div>
+        <div class="cherche">
+          <input type="text" placeholder="Rechercher sur Mon Market..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <nav class="nav-bottom" id="navBottom">
+        <a href="home.html" id="iconnav">
+          <span><i class="fa fa-bag-shopping"></i></span>
+          <div>Produits</div>
+        </a>
+
+        <a href="categories.html" id="iconnav">
+          <span><i class="fa fa-border-all"></i></span>
+          <div>Catégories</div>
+        </a>
+
+        <a href="achat.html" id="iconnav">
+          <span><i class="fa fa-cart-shopping"></i></span>
+          <div>Panier</div>
+        </a>
+
+        <a href="offres.html" id="iconnav">
+          <span><i class="fa fa-gift"></i></span>
+          <div>Offres</div>
+        </a>
+
+        <a
+          href="compte.html"
+          id="iconnav"
+          style="color: #08f2d7; font-weight: bold"
+        >
+          <span><i class="fa fa-user"></i></span>
+          <div>Compte</div>
+        </a>
+      </nav>
+    </header>
+
+    <main style="padding: 15px; min-height: 100vh">
+      <div id="cardmodifier">
+        <div id="persomodifier">
+          <div class="photo">
+            <span><i class="fa fa-user-circle"></i></span>
+            <h1 class="utilisateur">Utilisateur Mon Market</h1>
+          </div>
+          <div class="ligne"></div>
+          <div class="nom">
+            <h3>
+              <span class="c"><i class="fa fa-user"></i></span>Nom complet :
+            </h3>
+            <p>Nom de l'utilisateur</p>
+          </div>
+          <div class="ligne"></div>
+          <div class="adressmail">
+            <h3>
+              <span class="c"><i class="fa fa-envelope"></i></span>Adresse
+              e-mail :
+            </h3>
+            <p>Email de l'utilisateur</p>
+          </div>
+          <div class="ligne"></div>
+          <div class="numero">
+            <h3>
+              <span class="c"><i class="fa fa-phone"></i></span>Numéro de
+              téléphone :
+            </h3>
+            <p>Numéro de l'utilisateur</p>
+          </div>
+          <div class="ligne"></div>
+          <div class="anniversair">
+            <h3>
+              <span class="c"><i class="fa fa-calendar-day"></i></span>Date de
+              naissance :
+            </h3>
+            <p>Date de naissance de l'utilisateur</p>
+          </div>
+          <div class="ligne"></div>
+          <div class="adresslivraison">
+            <h3>
+              <span class="c"><i class="fa fa-location-dot"></i></span>Adress de
+              livraison :
+            </h3>
+            <p>Adresse de livraison de l'utilisateur</p>
+          </div>
+          <div class="ligne"></div>
+          <div class="choix">
+            <div>
+              <button class="retour">
+                <a href="compte.html"
+                  ><span><i class="fa fa-arrow-left"></i></span>Retour</a
+                >
+              </button>
+            </div>
+            <div>
+              <button class="modifier">
+                <a href="#">
+                  <span class="pen"><i class="fa fa-pen"></i></span>Modifier</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="personnel.js"></script>
+  </body>
+</html>

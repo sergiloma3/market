@@ -1,0 +1,907 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Commandes - Mon Market</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+      }
+      body.dark-mode {
+        --bg-color: #121212;
+        --text-color: #ffffff;
+        --card-bg: #1e1e1e;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition:
+          background 0.3s,
+          color 0.3s;
+      }
+      .navbar {
+        background: #0d1a2b;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .nav-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+      }
+
+      .logo {
+        height: 35px;
+        width: auto;
+      }
+
+      .cherche {
+        flex: 1;
+        display: flex;
+        background: white;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-left: 15px;
+        width: 500px;
+      }
+
+      .cherche input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        outline: none;
+      }
+
+      .cherche button {
+        background: #03ab60;
+        border: none;
+        padding: 0 15px;
+        font-size: 1.2rem;
+      }
+
+      .nav-bottom {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        scrollbar-width: none;
+        margin-right: 45px;
+      }
+
+      .nav-bottom::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-bottom a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.95rem;
+        white-space: nowrap;
+      }
+
+      .menu-toggle {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        margin-left: 22px;
+      }
+      #iconnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        gap: 4px;
+      }
+      #iconnav:hover {
+        background-color: #2ea871;
+        border-radius: 10px;
+      }
+
+      #iconnav span {
+        color: #3eeabc;
+        font-size: 18px;
+      }
+
+      #iconnav div {
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .nav-bottom {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          padding: 12px 0;
+        }
+
+        .nav-bottom.active {
+          display: flex;
+        }
+
+        #iconnav {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          gap: 10px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        #iconnav span,
+        #iconnav div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      #montitre {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+
+      #montitre span {
+        color: #03ab60;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          padding: 20px 12px !important;
+        }
+
+        .navbar {
+          position: sticky;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .nav-top {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+
+        .cherche {
+          width: 100%;
+          min-width: 0;
+          margin-left: 0;
+          flex: 1;
+        }
+
+        .cherche input {
+          min-width: 0;
+          width: 100%;
+        }
+
+        .cherche button {
+          min-width: 42px;
+          flex-shrink: 0;
+        }
+
+        .menu-toggle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .nav-bottom {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+          gap: 10px;
+          background: rgba(13, 26, 43, 0.98);
+          padding: 12px 15px 15px;
+          margin: 0;
+          z-index: 200;
+        }
+
+        .nav-bottom.active {
+          display: flex;
+        }
+        #montitre {
+          font-size: 29px;
+        }
+      }
+      .navbar {
+        background: #0d1a2b;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .nav-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+      }
+
+      .logo {
+        height: 35px;
+        width: auto;
+      }
+
+      .cherche {
+        flex: 1;
+        display: flex;
+        background: white;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-left: 15px;
+        width: 500px;
+      }
+
+      .cherche input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        outline: none;
+      }
+
+      .cherche button {
+        background: #03ab60;
+        border: none;
+        padding: 0 15px;
+        font-size: 1.2rem;
+      }
+
+      .nav-bottom {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        scrollbar-width: none;
+        margin-right: 45px;
+      }
+
+      .nav-bottom::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-bottom a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.95rem;
+        white-space: nowrap;
+      }
+
+      .menu-toggle {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        margin-left: 22px;
+      }
+      #iconnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        gap: 4px;
+      }
+      #iconnav:hover {
+        background-color: #2ea871;
+        border-radius: 10px;
+      }
+
+      #iconnav span {
+        color: #3eeabc;
+        font-size: 18px;
+      }
+
+      #iconnav div {
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .nav-bottom {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          padding: 12px 0;
+        }
+
+        .nav-bottom.active {
+          display: flex;
+        }
+
+        #iconnav {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          gap: 10px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        #iconnav span,
+        #iconnav div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      #montitre {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+
+      #montitre span {
+        color: #03ab60;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          padding: 20px 12px !important;
+        }
+
+        .navbar {
+          position: sticky;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .nav-top {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+
+        .cherche {
+          width: 100%;
+          min-width: 0;
+          margin-left: 0;
+          flex: 1;
+        }
+
+        .cherche input {
+          min-width: 0;
+          width: 100%;
+        }
+
+        .cherche button {
+          min-width: 42px;
+          flex-shrink: 0;
+        }
+
+        .menu-toggle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .nav-bottom {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+          gap: 10px;
+          background: rgba(13, 26, 43, 0.98);
+          padding: 12px 15px 15px;
+          margin: 0;
+          z-index: 200;
+        }
+
+        .nav-bottom.active {
+          display: flex;
+        }
+        #montitre {
+          font-size: 29px;
+        }
+      }
+      .navbar {
+        background: #0d1a2b;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .nav-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+      }
+
+      .logo {
+        height: 35px;
+        width: auto;
+      }
+
+      .cherche {
+        flex: 1;
+        display: flex;
+        background: white;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-left: 15px;
+        width: 500px;
+      }
+
+      .cherche input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        outline: none;
+      }
+
+      .cherche button {
+        background: #03ab60;
+        border: none;
+        padding: 0 15px;
+        font-size: 1.2rem;
+      }
+
+      .nav-bottom {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        scrollbar-width: none;
+        margin-right: 45px;
+      }
+
+      .nav-bottom::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-bottom a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.95rem;
+        white-space: nowrap;
+      }
+
+      .menu-toggle {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        margin-left: 22px;
+      }
+      #iconnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        gap: 4px;
+      }
+      #iconnav:hover {
+        background-color: #2ea871;
+        border-radius: 10px;
+      }
+
+      #iconnav span {
+        color: #3eeabc;
+        font-size: 18px;
+      }
+
+      #iconnav div {
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .nav-bottom {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          padding: 12px 0;
+        }
+
+        .nav-bottom.active {
+          display: flex;
+        }
+
+        #iconnav {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          gap: 10px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        #iconnav span,
+        #iconnav div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      #montitre {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+
+      #montitre span {
+        color: #03ab60;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          padding: 20px 12px !important;
+        }
+
+        .navbar {
+          position: sticky;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .nav-top {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+
+        .cherche {
+          width: 100%;
+          min-width: 0;
+          margin-left: 0;
+          flex: 1;
+        }
+
+        .cherche input {
+          min-width: 0;
+          width: 100%;
+        }
+
+        .cherche button {
+          min-width: 42px;
+          flex-shrink: 0;
+        }
+
+        .menu-toggle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .nav-bottom {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+          gap: 10px;
+          background: rgba(13, 26, 43, 0.98);
+          padding: 12px 15px 15px;
+          margin: 0;
+          z-index: 200;
+        }
+
+        .nav-bottom.active {
+          display: flex;
+        }
+        #montitre {
+          font-size: 29px;
+        }
+      }
+      .navbar {
+        background: #0d1a2b;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .nav-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+      }
+
+      .logo {
+        height: 35px;
+        width: auto;
+      }
+
+      .cherche {
+        flex: 1;
+        display: flex;
+        background: white;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-left: 15px;
+        width: 500px;
+      }
+
+      .cherche input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        outline: none;
+      }
+
+      .cherche button {
+        background: #03ab60;
+        border: none;
+        padding: 0 15px;
+        font-size: 1.2rem;
+      }
+
+      .nav-bottom {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        scrollbar-width: none;
+        margin-right: 45px;
+      }
+
+      .nav-bottom::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-bottom a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.95rem;
+        white-space: nowrap;
+      }
+
+      .menu-toggle {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 25px;
+        margin-left: 22px;
+      }
+      #iconnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        gap: 4px;
+      }
+      #iconnav:hover {
+        background-color: #2ea871;
+        border-radius: 10px;
+      }
+
+      #iconnav span {
+        color: #3eeabc;
+        font-size: 18px;
+      }
+
+      #iconnav div {
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .nav-bottom {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          padding: 12px 0;
+        }
+
+        .nav-bottom.active {
+          display: flex;
+        }
+
+        #iconnav {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          gap: 10px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        #iconnav span,
+        #iconnav div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      #montitre {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+
+      #montitre span {
+        color: #03ab60;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          padding: 20px 12px !important;
+        }
+
+        .navbar {
+          position: sticky;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .nav-top {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+
+        .cherche {
+          width: 100%;
+          min-width: 0;
+          margin-left: 0;
+          flex: 1;
+        }
+
+        .cherche input {
+          min-width: 0;
+          width: 100%;
+        }
+
+        .cherche button {
+          min-width: 42px;
+          flex-shrink: 0;
+        }
+
+        .menu-toggle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .nav-bottom {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+          gap: 10px;
+          background: rgba(13, 26, 43, 0.98);
+          padding: 12px 15px 15px;
+          margin: 0;
+          z-index: 200;
+        }
+
+        .nav-bottom.active {
+          display: flex;
+        }
+        #montitre {
+          font-size: 29px;
+        }
+      }
+      @media (max-width: 768px) {
+        .nav-top {
+          flex-wrap: wrap;
+        }
+
+        .cherche {
+          flex: 0 0 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-top">
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <div id="montitre"><span>Mon</span> Market</div>
+        <div class="cherche">
+          <input type="text" placeholder="Rechercher sur Mon Market..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <nav class="nav-bottom" id="navBottom">
+        <a href="home.html" id="iconnav">
+          <span><i class="fa fa-bag-shopping"></i></span>
+          <div>Produits</div>
+        </a>
+
+        <a href="categories.html" id="iconnav">
+          <span><i class="fa fa-border-all"></i></span>
+          <div>Catégories</div>
+        </a>
+
+        <a href="achat.html" id="iconnav">
+          <span><i class="fa fa-cart-shopping"></i></span>
+          <div>Panier</div>
+        </a>
+
+        <a href="offres.html" id="iconnav">
+          <span><i class="fa fa-gift"></i></span>
+          <div>Offres</div>
+        </a>
+
+        <a
+          href="compte.html"
+          id="iconnav"
+          style="color: #08f2d7; font-weight: bold"
+        >
+          <span><i class="fa fa-user"></i></span>
+          <div>Compte</div>
+        </a>
+      </nav>
+    </header>
+
+    <script src="commande.js"></script>
+  </body>
+</html>

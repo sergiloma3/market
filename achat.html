@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Mon Market</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="achat.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-top">
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <div id="montitre"><span>Mon</span> Market</div>
+        <div class="cherche">
+          <input type="text" placeholder="Rechercher sur Mon Market..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <nav class="nav-bottom" id="navBottom">
+        <a href="home.html" id="iconnav">
+          <span><i class="fa fa-bag-shopping"></i></span>
+          <div>Produits</div>
+        </a>
+
+        <a href="categories.html" id="iconnav">
+          <span><i class="fa fa-border-all"></i></span>
+          <div>Catégories</div>
+        </a>
+
+        <a
+          href="achat.html"
+          id="iconnav"
+          style="color: #08f2d7; font-weight: bold"
+        >
+          <span><i class="fa fa-cart-shopping"></i></span>
+          <div>Panier</div>
+        </a>
+
+        <a href="offres.html" id="iconnav">
+          <span><i class="fa fa-gift"></i></span>
+          <div>Offres</div>
+        </a>
+
+        <a href="compte.html" id="iconnav">
+          <span><i class="fa fa-user"></i></span>
+          <div>Compte</div>
+        </a>
+      </nav>
+    </header>
+    <div style="text-align: center">
+      <h1 style="padding: 20px">Bienvenue sur votre achat</h1>
+    </div>
+    <div class="achat-container">
+      <div class="details">
+        <h2 class="d">Détails des articles</h2>
+        <div class="produit-in">
+          <img id="img-achat" src="" alt="Produit" />
+          <div class="cardinfo">
+            <div class="in">
+              <h3 id="nom-achat">Nom du produit</h3>
+              <br />
+              <p id="prix-achat">0.00 Ar</p>
+
+              <div class="cal">
+                <span id="n">-</span><span id="ch">1</span
+                ><span id="plus">+</span>
+              </div>
+            </div>
+
+            <div class="lieux">
+              <div class="lie">
+                <span><i class="fa fa-location-dot"></i></span>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Nom de la ville"
+                />
+              </div>
+              <div class="lie">
+                <span><i class="fa fa-location-dot"></i></span>
+                <input type="number" name="" id="" placeholder="Code postal" />
+              </div>
+              <div class="lie">
+                <span><i class="fa fa-location-dot"></i></span>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Nom du quartier"
+                />
+              </div>
+              <div class="lie">
+                <span><i class="fa fa-location-dot"></i></span>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Adress du domicile"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clique">
+          <button id="btn-sup">Supprimer</button>
+
+          <div class="detailpro">Détails du produit</div>
+        </div>
+        <div id="infos">
+          <h3>Nom du produit</h3>
+          <p>Stockage ...</p>
+          <p>Ram ...</p>
+          <p>Ecran ...</p>
+          <p>Batterie ...</p>
+          <p>Camera ...</p>
+          <p>Processeur ...</p>
+        </div>
+      </div>
+      <div class="confirme">
+        <h2 class="d">Résumé de la commande</h2>
+        <p>Prix du produit :</p>
+        <p>Frais de livraison :</p>
+        <p id="total">Total :</p>
+        <div class="bonus">
+          <input type="text" id="codepm" placeholder="Code promo" />
+          <button id="appliquer">Appliquer</button>
+        </div>
+        <button id="payer">Procérder au paiment</button>
+      </div>
+    </div>
+    <section class="serviceclient">
+      <div>
+        <span><i class="fa fa-headset"></i></span>
+        <h2>Service client</h2>
+      </div>
+      <div>
+        <span><i class="fa fa-book"></i></span>
+        <h2>Guide</h2>
+      </div>
+      <div>
+        <span><i class="fa fa-truck"></i></span>
+        <h2>En savoir plus</h2>
+      </div>
+    </section>
+    <script src="achat.js"></script>
+  </body>
+</html>

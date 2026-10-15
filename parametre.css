@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f4f7f9;
+  color: #333;
+}
+
+.section-title {
+  padding: 15px 15px 8px;
+  font-size: 0.85rem;
+  color: #777;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 1px solid gray;
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  border-top: 1px solid gray;
+}
+.option-item:hover {
+  background-color: #03ab5f7c;
+}
+
+.option-item:last-child {
+  border-bottom: none;
+}
+
+.valeur i {
+  color: black;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --border-color: #333333;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.settings-header {
+  background: var(--card-bg);
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.back-btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.section-title {
+  padding: 15px 15px 8px;
+  font-size: 22px;
+  color: #777;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.options-group {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.retour {
+  margin-top: 18px;
+  margin-left: 18px;
+  border: 2px solid #03ab60;
+  background-color: none;
+  outline: none;
+  width: 230px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.retour a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #03ab60;
+}
+.retour span {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding-right: 18px;
+}
+.retour span div {
+  font-size: 18px;
+  margin-left: 5px;
+}
+.retour:hover {
+  transform: translateY(-4px);
+  transition: 0.2s ease-in;
+  background-color: #03ab60;
+  border: 2px solid #0d1a2b;
+  a {
+    color: #0d1a2b;
+  }
+}

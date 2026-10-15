@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <title>Mon Compte - Mon Market</title>
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="compte.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-top">
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <div id="montitre"><span>Mon</span> Market</div>
+        <div class="cherche">
+          <input type="text" placeholder="Rechercher sur Mon Market..." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+      <nav class="nav-bottom" id="navBottom">
+        <a href="home.html" id="iconnav">
+          <span><i class="fa fa-bag-shopping"></i></span>
+          <div>Produits</div>
+        </a>
+
+        <a href="categories.html" id="iconnav">
+          <span><i class="fa fa-border-all"></i></span>
+          <div>Catégories</div>
+        </a>
+
+        <a href="achat.html" id="iconnav">
+          <span><i class="fa fa-cart-shopping"></i></span>
+          <div>Panier</div>
+        </a>
+
+        <a href="offres.html" id="iconnav">
+          <span><i class="fa fa-gift"></i></span>
+          <div>Offres</div>
+        </a>
+
+        <a
+          href="compte.html"
+          id="iconnav"
+          style="color: #08f2d7; font-weight: bold"
+        >
+          <span><i class="fa fa-user"></i></span>
+          <div>Compte</div>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="profilcompte">
+        <span><i class="fa fa-user-circle"></i></span>
+        <div class="textcompte">
+          <h1>Mon compte</h1>
+          <p>blablala@gmail.compte</p>
+        </div>
+      </div>
+
+      <div class="menu-gestion">
+        <a href="personnel.html" class="option-item">
+          <div class="option-text">
+            <span><i class="fa fa-user"></i></span>
+
+            <span>Informations personnelles</span>
+          </div>
+          <span><i class="fa fa-chevron-right"></i></span>
+        </a>
+        <a href="commande.html" class="option-item">
+          <div class="option-text">
+            <span><i class="fa fa-box"></i></span>
+
+            <span>Mes Commandes</span>
+          </div>
+          <span><i class="fa fa-chevron-right"></i></span>
+        </a>
+
+        <a href="#" class="option-item">
+          <div class="option-text">
+            <span><i class="fa fa-heart"></i></span>
+
+            <span>Mes favoris</span>
+          </div>
+          <span><i class="fa fa-chevron-right"></i></span>
+        </a>
+
+        <a href="#" class="option-item">
+          <div class="option-text">
+            <span><i class="fa fa-headset"></i></span>
+
+            <span>Service client</span>
+          </div>
+          <span><i class="fa fa-chevron-right"></i></span>
+        </a>
+
+        <a href="parametre.html" class="option-item">
+          <div class="option-text">
+            <span><i class="fa fa-gear"></i></span>
+
+            <span>Paramètre</span>
+          </div>
+          <span><i class="fa fa-chevron-right"></i></span>
+        </a>
+
+        <a href="login.html" class="option-item logout"> Se déconnecter </a>
+      </div>
+    </main>
+    <script src="compte.js"></script>
+  </body>
+</html>

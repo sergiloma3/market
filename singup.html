@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Mon Market-Singup</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="singup.css" />
+  </head>
+  <body>
+    <div class="bgexterieurr">
+      <img src="fond4.jpg" alt="Fond" class="bg-image" />
+
+      <div class="sombre"></div>
+    </div>
+
+    <div class="center">
+      <div class="titre">
+        <h1>Mon Market</h1>
+
+        <p class="style">Achetez . Commandez</p>
+        <div class="top-text">
+          SIMPLE <span>.</span> RAPIDE <span>.</span> SÉCURISÉ
+        </div>
+      </div>
+      <form action="">
+        <div class="log">
+          <label for="">Nom</label>
+          <div class="boxname">
+            <div class="utilisat">
+              <span id="s"><i class="fa fa-user"></i></span>
+              <input id="user" type="text" placeholder="Nom d'utilisateur" />
+            </div>
+            <div class="errorname">nom invalide</div>
+            <div class="valid_name">nom valide</div>
+          </div>
+
+          <label>Numéro de téléphone</label>
+          <div class="boxnum">
+            <div class="num">
+              <span id="s"><i class="fa fa-phone"></i></span>
+              <input
+                id="tel"
+                type="tel"
+                placeholder="Votre numéro de téléphone"
+              />
+            </div>
+            <div class="errornum">numéro invalidé</div>
+            <div class="valid_num">numéro validé</div>
+          </div>
+
+          <label for="">Adresse email</label>
+          <div class="boxemail">
+            <div class="mail">
+              <span id="s"><i class="fa fa-envelope"></i></span>
+              <input
+                id="email"
+                type="email"
+                placeholder="Votre adresse email"
+              />
+            </div>
+            <div class="errortxt">email invalidé</div>
+            <div class="valid_email">email validé</div>
+          </div>
+
+          <label for="">Mot de passe</label>
+          <div class="boxemdp">
+            <div class="mail">
+              <span id="s"><i class="fa fa-lock"></i></span>
+              <input
+                id="mdp"
+                type="password"
+                placeholder="Votre mot de passe"
+              />
+              <span id="lock"><i class="fa fa-eye"></i></span>
+            </div>
+            <div class="errormdp">mot de passe invalidé</div>
+            <div class="valid_mdp">mot de passe validé</div>
+          </div>
+
+          <button type="submit" class="btn-enter">S'inscrire</button>
+          <div class="rapide">
+            <button id="google">
+              <span id="g">G</span><span id="o">o</span><span id="oo">o</span
+              ><span id="gg">g</span><span id="l">l</span><span id="e">e</span>
+            </button>
+            <button id="facebook">
+              <span><i class="fa-brands fa-facebook"></i></span>Facebook
+            </button>
+          </div>
+          <div class="op">
+            <p id="singup"><a href="login.html">Se connecter</a></p>
+            <p id="forgot">forgot password ?</p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="singup.js"></script>
+  </body>
+</html>
